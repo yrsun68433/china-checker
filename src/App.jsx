@@ -241,7 +241,7 @@ export default function App() {
       {/* Header */}
       <div style={{
         background: "linear-gradient(135deg, #0f1a35 0%, #1a2340 60%, #1e2d50 100%)",
-        padding: "40px 24px 36px",
+        padding: "28px 24px 24px",
         overflow: "hidden",
         position: "relative",
       }}>
@@ -256,7 +256,7 @@ export default function App() {
           <div style={{
             display: "inline-flex", alignItems: "center", gap: 8,
             fontSize: 10, color: "#93c5fd", letterSpacing: "0.18em",
-            fontWeight: 600, marginBottom: 14, fontFamily: "system-ui",
+            fontWeight: 600, marginBottom: 10, fontFamily: "system-ui",
           }}>
             <div style={{ width: 20, height: 1, background: "#60a5fa" }} />
             國立臺灣大學 · 社會科學院
@@ -266,7 +266,7 @@ export default function App() {
           {/* main title */}
           <h1 style={{
             margin: 0,
-            fontSize: "clamp(32px, 7vw, 52px)",
+            fontSize: "clamp(26px, 5vw, 38px)",
             fontWeight: 900,
             color: "#fff",
             letterSpacing: "0.06em",
@@ -278,7 +278,7 @@ export default function App() {
           </h1>
 
           {/* subtitle */}
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 10, marginTop: 14 }}>
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 10, marginTop: 10 }}>
             <div style={{ height: 1, width: 32, background: "rgba(147,197,253,0.4)" }} />
             <p style={{
               margin: 0, fontSize: 13, color: "#93c5fd",
