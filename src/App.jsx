@@ -241,7 +241,7 @@ export default function App() {
       {/* Header */}
       <div style={{
         background: "linear-gradient(135deg, #0f1a35 0%, #1a2340 60%, #1e2d50 100%)",
-        padding: "36px 24px 32px",
+        padding: "40px 24px 36px",
         overflow: "hidden",
         position: "relative",
       }}>
@@ -251,22 +251,22 @@ export default function App() {
         {/* left accent bar */}
         <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: 4, background: "linear-gradient(to bottom, #60a5fa, #3b82f6)" }} />
 
-        <div style={{ position: "relative" }}>
+        <div style={{ position: "relative", textAlign: "center" }}>
           {/* top label */}
           <div style={{
             display: "inline-flex", alignItems: "center", gap: 8,
-            fontSize: 11, color: "#93c5fd", letterSpacing: "0.18em",
+            fontSize: 10, color: "#93c5fd", letterSpacing: "0.18em",
             fontWeight: 600, marginBottom: 14, fontFamily: "system-ui",
           }}>
-            <div style={{ width: 16, height: 1, background: "#60a5fa" }} />
+            <div style={{ width: 20, height: 1, background: "#60a5fa" }} />
             國立臺灣大學 · 社會科學院
-            <div style={{ width: 16, height: 1, background: "#60a5fa" }} />
+            <div style={{ width: 20, height: 1, background: "#60a5fa" }} />
           </div>
 
           {/* main title */}
           <h1 style={{
             margin: 0,
-            fontSize: "clamp(28px, 6vw, 42px)",
+            fontSize: "clamp(32px, 7vw, 52px)",
             fontWeight: 900,
             color: "#fff",
             letterSpacing: "0.06em",
@@ -278,7 +278,7 @@ export default function App() {
           </h1>
 
           {/* subtitle */}
-          <div style={{ display: "flex", alignItems: "center", gap: 10, marginTop: 12 }}>
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 10, marginTop: 14 }}>
             <div style={{ height: 1, width: 32, background: "rgba(147,197,253,0.4)" }} />
             <p style={{
               margin: 0, fontSize: 13, color: "#93c5fd",
