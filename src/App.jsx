@@ -239,18 +239,59 @@ export default function App() {
     <div style={{ fontFamily: "'Noto Serif TC', Georgia, serif", minHeight: "100vh", background: "linear-gradient(135deg, #f8f7f4 0%, #eef0f5 100%)", paddingBottom: 60 }}>
 
       {/* Header */}
-      <div style={{ background: "#1a2340", padding: "28px 24px 24px", overflow: "hidden", position: "relative" }}>
-        <div style={{ position: "absolute", top: -40, right: -40, width: 180, height: 180, borderRadius: "50%", background: "rgba(255,255,255,0.04)" }} />
-        <div style={{ maxWidth: 780, margin: "0 auto", position: "relative" }}>
-          <div style={{ fontSize: 11, color: "#93c5fd", letterSpacing: "0.15em", fontWeight: 600, marginBottom: 8, fontFamily: "system-ui" }}>
+      <div style={{
+        background: "linear-gradient(135deg, #0f1a35 0%, #1a2340 60%, #1e2d50 100%)",
+        padding: "36px 24px 32px",
+        overflow: "hidden",
+        position: "relative",
+      }}>
+        {/* decorative circles */}
+        <div style={{ position: "absolute", top: -60, right: -60, width: 240, height: 240, borderRadius: "50%", background: "rgba(147,197,253,0.05)" }} />
+        <div style={{ position: "absolute", bottom: -80, left: -30, width: 200, height: 200, borderRadius: "50%", background: "rgba(147,197,253,0.04)" }} />
+        {/* left accent bar */}
+        <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: 4, background: "linear-gradient(to bottom, #60a5fa, #3b82f6)" }} />
+
+        <div style={{ position: "relative" }}>
+          {/* top label */}
+          <div style={{
+            display: "inline-flex", alignItems: "center", gap: 8,
+            fontSize: 11, color: "#93c5fd", letterSpacing: "0.18em",
+            fontWeight: 600, marginBottom: 14, fontFamily: "system-ui",
+          }}>
+            <div style={{ width: 16, height: 1, background: "#60a5fa" }} />
             國立臺灣大學 · 社會科學院
+            <div style={{ width: 16, height: 1, background: "#60a5fa" }} />
           </div>
-          <h1 style={{ margin: 0, fontSize: 22, fontWeight: 800, color: "#fff" }}>中國大陸研究學程</h1>
-          <p style={{ margin: "6px 0 0", fontSize: 13, color: "#93c5fd", fontFamily: "system-ui" }}>修課審核試算系統</p>
+
+          {/* main title */}
+          <h1 style={{
+            margin: 0,
+            fontSize: "clamp(28px, 6vw, 42px)",
+            fontWeight: 900,
+            color: "#fff",
+            letterSpacing: "0.06em",
+            lineHeight: 1.1,
+            fontFamily: "'Noto Serif TC', 'Source Han Serif TC', serif",
+            textShadow: "0 2px 20px rgba(0,0,0,0.4)",
+          }}>
+            中國大陸研究學程
+          </h1>
+
+          {/* subtitle */}
+          <div style={{ display: "flex", alignItems: "center", gap: 10, marginTop: 12 }}>
+            <div style={{ height: 1, width: 32, background: "rgba(147,197,253,0.4)" }} />
+            <p style={{
+              margin: 0, fontSize: 13, color: "#93c5fd",
+              fontFamily: "system-ui", letterSpacing: "0.14em", fontWeight: 500,
+            }}>
+              修課審核試算系統
+            </p>
+            <div style={{ height: 1, width: 32, background: "rgba(147,197,253,0.4)" }} />
+          </div>
         </div>
       </div>
 
-      <div style={{ maxWidth: 780, margin: "0 auto", padding: "0 16px" }}>
+      <div style={{ padding: "0 16px" }}>
 
         {/* Cohort selector */}
         <div style={{ background: "#fff", borderRadius: 12, padding: 18, marginTop: 20, boxShadow: "0 1px 4px rgba(0,0,0,0.08)", border: "1px solid #e5e7eb" }}>
@@ -461,7 +502,7 @@ export default function App() {
 
         {/* Footer note */}
         <div style={{ marginTop: 20, padding: "12px 16px", background: "#fffbeb", border: "1px solid #fcd34d", borderRadius: 10, fontSize: 11, color: "#78350f", lineHeight: 1.7, fontFamily: "system-ui" }}>
-          <strong>注意：</strong>
+          <strong>⚠️ 注意：</strong>
           {cohort === "after108"
             ? "108學年度（含）以後申請者，須修畢必修導論（二擇一），並跨選至少 2 個領域，總學分達 15 學分以上。"
             : "108學年度以前申請者，須跨選至少 3 個領域，總學分達 20 學分以上（無強制必修導論）。"}
