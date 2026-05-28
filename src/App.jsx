@@ -367,8 +367,8 @@ export default function App() {
         </div>
 
         {/* Credit hint */}
-        <div style={{ marginTop: 10, padding: "8px 12px", background: "#eff6ff", border: "1px solid #bfdbfe", borderRadius: 8, fontSize: 11, color: "#1e40af", fontFamily: "system-ui", lineHeight: 1.6 }}>
-          💡 勾選課程後，點擊右側數字按鈕輸入正確學分數（請至 <strong>course.ntu.edu.tw</strong> 查詢）
+        <div style={{ marginTop: 10, padding: "10px 14px", background: "#fffbeb", border: "1px solid #f59e0b", borderRadius: 8, fontSize: 12, color: "#92400e", fontFamily: "system-ui", lineHeight: 1.6, fontWeight: 600 }}>
+          ⚠️ 勾選課程後，點擊右側數字按鈕選擇正確學分數
         </div>
 
         {/* Required courses */}
@@ -506,7 +506,7 @@ export default function App() {
           {cohort === "after108"
             ? "108學年度（含）以後申請者，須修畢必修導論（二擇一），並跨選至少 2 個領域，總學分達 15 學分以上。"
             : "108學年度以前申請者，須跨選至少 3 個領域，總學分達 20 學分以上（無強制必修導論）。"}
-          　試算結果僅供參考，最終認定以學程承辦單位審核為準。
+          試算結果僅供參考，最終認定以學程承辦單位審核為準。
         </div>
 
       </div>
